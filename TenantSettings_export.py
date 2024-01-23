@@ -85,4 +85,4 @@ dfSettings = dfSettings.withColumn("ExportedDate", lit(activityDate))
 dfSettings.show()
 
 # Write to table
-dfSettings.write.mode("overwrite").format("delta").saveAsTable("TenantSettings-initials")
+dfSettings.write.mode("overwrite").format("delta").saveAsTable("TenantSettingsInitials")
